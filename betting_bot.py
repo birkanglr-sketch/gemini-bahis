@@ -53,6 +53,7 @@ MIN_LEGS = 1                     # yeterli seçim yoksa tek maça da oynar
 MAX_LEGS = 3
 MIN_ODDS_PER_AYAK = 1.30         # bu oranın altı: çok sıkıcı/düşük getiri, atlanır
 MAX_ODDS_PER_AYAK = 3.00         # bu oranın üstü: çok riskli sürpriz, atlanır
+MAX_HOURS_AHEAD = 30             # sadece bu kadar saat içinde başlayacak maçlara bakılır (her gün oynasın diye)
 SETTLE_BUFFER_HOURS = 3          # maç bitiminden bu kadar saat sonra sonucu kesin sayar
 
 STATE_FILE = "state.json"
@@ -143,12 +144,20 @@ def collect_candidate_legs(already_used_event_ids):
             if not (MIN_ODDS_PER_AYAK <= odds <= MAX_ODDS_PER_AYAK):
                 continue
 
+            commence_time = event.get("commence_time")
+            if not commence_time:
+                continue
+            commence = datetime.fromisoformat(commence_time.replace("Z", "+00:00"))
+            hours_ahead = (commence - datetime.now(timezone.utc)).total_seconds() / 3600
+            if hours_ahead < 0 or hours_ahead > MAX_HOURS_AHEAD:
+                continue
+
             candidates.append({
                 "sport_key": sport_key,
                 "event_id": event["id"],
                 "home_team": event.get("home_team", "?"),
                 "away_team": event.get("away_team", "?"),
-                "commence_time": event.get("commence_time"),
+                "commence_time": commence_time,
                 "pick": favorite["name"],
                 "odds": odds,
             })
