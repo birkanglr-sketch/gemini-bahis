@@ -1,0 +1,111 @@
+{
+  "bankroll": 1557.376,
+  "pending_coupons": [
+    {
+      "legs": [
+        {
+          "sport_key": "soccer_france_ligue_one",
+          "event_id": "5751b76f18cdad53d0e5590bd7bf2677",
+          "home_team": "Brest",
+          "away_team": "Paris Saint Germain",
+          "commence_time": "2026-09-13T18:45:00Z",
+          "pick": "Paris Saint Germain",
+          "odds": 1.3
+        },
+        {
+          "sport_key": "soccer_italy_serie_a",
+          "event_id": "32989e446cccc9a7f71ece00c93da57c",
+          "home_team": "AC Milan",
+          "away_team": "Lecce",
+          "commence_time": "2026-09-20T18:45:00Z",
+          "pick": "AC Milan",
+          "odds": 1.31
+        },
+        {
+          "sport_key": "soccer_uefa_champs_league",
+          "event_id": "8f1221dd6bc88a3ebbfe573332840741",
+          "home_team": "Club Brugge",
+          "away_team": "Aston Villa",
+          "commence_time": "2026-09-08T16:45:00Z",
+          "pick": "Aston Villa",
+          "odds": 1.32
+        }
+      ],
+      "stake": 160.0,
+      "combined_odds": 2.248,
+      "potential_return": 359.67,
+      "placed_at": "2026-09-08T18:31:09.917800+00:00"
+    },
+    {
+      "legs": [
+        {
+          "sport_key": "basketball_nba",
+          "event_id": "af2f084075391e55ba2a596e7846bb40",
+          "home_team": "Houston Rockets",
+          "away_team": "Dallas Mavericks",
+          "commence_time": "2026-10-22T00:40:00Z",
+          "pick": "Houston Rockets",
+          "odds": 1.32
+        },
+        {
+          "sport_key": "soccer_spain_la_liga",
+          "event_id": "0b57607f4a514ee24df31b0c2db9ddc5",
+          "home_team": "Elche CF",
+          "away_team": "Real Madrid",
+          "commence_time": "2026-09-15T19:30:00Z",
+          "pick": "Real Madrid",
+          "odds": 1.33
+        },
+        {
+          "sport_key": "tennis_wta_us_open",
+          "event_id": "2269201fc3a83e61bccb9d36f60790b7",
+          "home_team": "Qinwen Zheng",
+          "away_team": "Elena Rybakina",
+          "commence_time": "2026-09-09T15:30:00Z",
+          "pick": "Elena Rybakina",
+          "odds": 1.35
+        }
+      ],
+      "stake": 147.20000000000002,
+      "combined_odds": 2.37,
+      "potential_return": 348.87,
+      "placed_at": "2026-09-08T18:31:09.918028+00:00"
+    },
+    {
+      "legs": [
+        {
+          "sport_key": "soccer_france_ligue_one",
+          "event_id": "5c0ac2b28bd80f7e8c5a01cbfb427a93",
+          "home_team": "Lille",
+          "away_team": "Troyes",
+          "commence_time": "2026-09-13T13:00:00Z",
+          "pick": "Lille",
+          "odds": 1.37
+        },
+        {
+          "sport_key": "soccer_germany_bundesliga",
+          "event_id": "f12855726aa78ca369db8df744bed8ae",
+          "home_team": "RB Leipzig",
+          "away_team": "Hamburger SV",
+          "commence_time": "2026-09-13T13:30:00Z",
+          "pick": "RB Leipzig",
+          "odds": 1.41
+        },
+        {
+          "sport_key": "basketball_nba",
+          "event_id": "49fc89a9696a9a20b658732b34ce61c4",
+          "home_team": "San Antonio Spurs",
+          "away_team": "Houston Rockets",
+          "commence_time": "2026-10-24T01:40:00Z",
+          "pick": "San Antonio Spurs",
+          "odds": 1.41
+        }
+      ],
+      "stake": 135.424,
+      "combined_odds": 2.724,
+      "potential_return": 368.85,
+      "placed_at": "2026-09-08T18:31:09.918093+00:00"
+    }
+  ],
+  "starting_bankroll": 2000.0
+}
