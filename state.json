@@ -1,5 +1,5 @@
 {
-  "bankroll": 1557.376,
+  "bankroll": 1261.47456,
   "pending_coupons": [
     {
       "legs": [
@@ -105,6 +105,67 @@
       "combined_odds": 2.724,
       "potential_return": 368.85,
       "placed_at": "2026-09-08T18:31:09.918093+00:00"
+    },
+    {
+      "legs": [
+        {
+          "sport_key": "tennis_wta_us_open",
+          "event_id": "2cdfc101f5350802c2abe2cfe43b1c32",
+          "home_team": "Mirra Andreeva",
+          "away_team": "Coco Gauff",
+          "commence_time": "2026-09-09T16:30:00Z",
+          "pick": "Coco Gauff",
+          "odds": 1.52
+        },
+        {
+          "sport_key": "tennis_atp_us_open",
+          "event_id": "c399320f054bede5f4cd2c5f6647e3ab",
+          "home_team": "Karen Khachanov",
+          "away_team": "Alexander Blockx",
+          "commence_time": "2026-09-09T18:00:00Z",
+          "pick": "Karen Khachanov",
+          "odds": 1.58
+        },
+        {
+          "sport_key": "soccer_uefa_champs_league",
+          "event_id": "a43752f35ceb66893134410ad476bca9",
+          "home_team": "Napoli",
+          "away_team": "Arsenal",
+          "commence_time": "2026-09-09T19:00:00Z",
+          "pick": "Arsenal",
+          "odds": 1.72
+        }
+      ],
+      "stake": 155.73760000000001,
+      "combined_odds": 4.131,
+      "potential_return": 643.31,
+      "placed_at": "2026-09-08T19:21:32.335104+00:00"
+    },
+    {
+      "legs": [
+        {
+          "sport_key": "soccer_uefa_champs_league",
+          "event_id": "0f3bf8fff62bb732883c00265d28f766",
+          "home_team": "Liverpool",
+          "away_team": "Atl\u00e9tico Madrid",
+          "commence_time": "2026-09-09T19:00:00Z",
+          "pick": "Liverpool",
+          "odds": 1.73
+        },
+        {
+          "sport_key": "soccer_uefa_champs_league",
+          "event_id": "0be8f24bfc0697e8d789fafc699ece49",
+          "home_team": "Sporting Lisbon",
+          "away_team": "Galatasaray",
+          "commence_time": "2026-09-09T19:00:00Z",
+          "pick": "Sporting Lisbon",
+          "odds": 1.86
+        }
+      ],
+      "stake": 140.16384000000002,
+      "combined_odds": 3.218,
+      "potential_return": 451.02,
+      "placed_at": "2026-09-08T19:21:32.335432+00:00"
     }
   ],
   "starting_bankroll": 2000.0
