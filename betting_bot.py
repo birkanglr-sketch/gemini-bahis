@@ -47,14 +47,14 @@ SPORT_KEYS = [
 ]
 
 STARTING_BANKROLL = 2000.0
-STAKE_PCT_OF_BANKROLL = 0.08     # her kupona bakiyenin %8'i kadar bahis
-MAX_OPEN_COUPONS = 3             # aynı anda en fazla kaç kupon bekliyor olsun
+STAKE_PCT_OF_BANKROLL = 0.10     # her kupona bakiyenin %8'i kadar bahis
+MAX_OPEN_COUPONS = 10             # aynı anda en fazla kaç kupon bekliyor olsun
 MIN_LEGS = 1                     # yeterli seçim yoksa tek maça da oynar
 MAX_LEGS = 3
 MIN_ODDS_PER_AYAK = 1.30         # bu oranın altı: çok sıkıcı/düşük getiri, atlanır
 MAX_ODDS_PER_AYAK = 3.00         # bu oranın üstü: çok riskli sürpriz, atlanır
-MAX_HOURS_AHEAD = 30             # sadece bu kadar saat içinde başlayacak maçlara bakılır (her gün oynasın diye)
-SETTLE_BUFFER_HOURS = 3          # maç bitiminden bu kadar saat sonra sonucu kesin sayar
+MAX_HOURS_AHEAD = 24             # sadece bu kadar saat içinde başlayacak maçlara bakılır (her gün oynasın diye)
+SETTLE_BUFFER_HOURS = 1          # maç bitiminden bu kadar saat sonra sonucu kesin sayar
 
 STATE_FILE = "state.json"
 LOG_FILE = "bets_log.csv"
