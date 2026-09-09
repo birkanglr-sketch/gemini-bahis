@@ -8,6 +8,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: betting-bot-single-run
+  cancel-in-progress: false
+
 jobs:
   run-bot:
     runs-on: ubuntu-latest
@@ -34,6 +38,13 @@ jobs:
         run: |
           git config user.name "betting-bot"
           git config user.email "betting-bot@users.noreply.github.com"
-          git add state.json bets_log.csv
-          git diff --quiet --cached || git commit -m "Bot güncellemesi: $(date -u +'%Y-%m-%d %H:%M UTC')"
-          git push
+          FILES=""
+          [ -f state.json ] && FILES="$FILES state.json"
+          [ -f bets_log.csv ] && FILES="$FILES bets_log.csv"
+          if [ -n "$FILES" ]; then
+            git add $FILES
+            git diff --quiet --cached || git commit -m "Bot güncellemesi: $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          else
+            echo "Henüz state.json/bets_log.csv oluşmamış — commit edilecek bir şey yok."
+          fi
